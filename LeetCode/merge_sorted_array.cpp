@@ -2,6 +2,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void print_nums(string name, vector<int> nums) {
+    int n = nums.size();
+    cout << name << " = [";
+    for (int i = 0; i < n; i++) {
+        string delim = (i == n - 1) ? "" : ",";
+        cout << nums[i] << delim;
+    }
+    cout << "]" << endl;
+}
+
 class Solution {
   public:
   void merge(vector<int>& nums1, int m, vector<int>& nums2, int n){
@@ -23,20 +33,11 @@ class Solution {
         j++;
       }
     }
-    for ( int i=0; i< nums1.size();i++)
+    print_nums("test", x);
+    for ( int i=0; i < nums1.size(); i++)
       nums1[i] = x[i];
   }
 };
-
-void print_nums( string name, vector<int> nums){
-    int n = nums.size();
-    cout << name << " = [";
-    for (int i=0; i < n; i++){
-      string delim = (i==n-1) ? "" : ",";
-      cout << nums[i] << delim;
-    }
-    cout << "]" << endl; 
-}
 
 int main() {
   vector<int> nums1 = {1,2,3,0,0,0};
