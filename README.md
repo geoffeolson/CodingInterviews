@@ -26,12 +26,12 @@ This file uses GitHub math ($…$, $$…$$). If any formulas don’t render, you
 
 ## 1) Assumptions & Symbols
 
-- Inner **current loop** is tightly closed by the drive → torque follows command:
-  - $$\tau(t) \approx K_t\, i_q^*(t)$$
-  - In the outer loop we model an **effective torque gain** \(K_\tau\) (use \(K_\tau = K_t\) if your controller outputs current; otherwise fold it into the PID gains).
-- **Mechanical plant** about motor shaft with load reflected:
-  - Inertia \(J\) [kg·m²], viscous damping \(b\) [N·m·s/rad]
-- Laplace variable \(s\), position \(\Theta(s)\), speed \(\Omega(s)\)
+Inner **current loop** is tightly closed by the drive → torque follows command:
+$$\tau(t) \approx K_t\, i_q^*(t)$$
+In the outer loop we model an **effective torque gain** \(K_\tau\) (use \(K_\tau = K_t\) if your controller outputs current; otherwise fold it into the PID gains).
+**Mechanical plant** about motor shaft with load reflected:
+Inertia \(J\) [kg·m²], viscous damping \(b\) [N·m·s/rad]
+Laplace variable \(s\), position \(\Theta(s)\), speed \(\Omega(s)\)
 
 **Mechanical pole (no control):** \(\displaystyle \omega_m = \frac{b}{J}\) (rad/s)
 
