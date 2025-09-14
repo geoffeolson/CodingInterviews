@@ -1,0 +1,10 @@
+PANDOC FILE CONVERSION UTILITY
+used for converting file formats from MarkDown to other formats like .docx or .pdf 
+
+==== INSTALLATION ====
+winget install --id JohnMacFarlane.Pandoc -e
+winget install --id MiKTeX.MiKTeX -e
+
+==== USE ====
+pandoc infile.md -f markdown+tex_math_dollars+tex_math_single_backslash -o outfile.docx
+pandoc infile.md -f markdown+tex_math_dollars+tex_math_single_backslash -o outfile.pdf --pdf-engine=xelatex
