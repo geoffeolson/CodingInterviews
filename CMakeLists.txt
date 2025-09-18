@@ -10,7 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add the single source file
 add_executable(${PROJECT_NAME}
-    LeetCode/getRandom.cpp )
+    LeetCode/productExceptSelf.cpp )
 
 # If you have headers in the LeetCode folder, add that directory
 target_include_directories(${PROJECT_NAME}
