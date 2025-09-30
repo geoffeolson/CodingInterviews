@@ -9,8 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add the single source file
-add_executable(${PROJECT_NAME}
-    LeetCode/isValidSudoku.cpp )
+add_executable(${PROJECT_NAME} LeetCode/setMatrixZeros.cpp )
 
 # If you have headers in the LeetCode folder, add that directory
 target_include_directories(${PROJECT_NAME}
