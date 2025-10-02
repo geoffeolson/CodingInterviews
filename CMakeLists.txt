@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add the single source file
-add_executable(${PROJECT_NAME} LeetCode/setMatrixZeros.cpp )
+add_executable(${PROJECT_NAME} LeetCode/ransom_note.cpp )
 
 # If you have headers in the LeetCode folder, add that directory
 target_include_directories(${PROJECT_NAME}
